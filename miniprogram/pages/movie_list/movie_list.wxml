@@ -1,0 +1,24 @@
+<!--pages/movie_list/movie_list.wxml-->
+<scroll-view sroll-y="true">
+  <!-- 一部电影区域 -->
+  <view class="movie" wx:for="{{list}}" wx:key="index" style="background:url({{detail.images.large}}) no-repeat top">
+    <!-- 左侧  电影图片(海报) -->
+    <image class="movie-img" src="{{item.images.small}}"></image>
+    <!-- 右侧  电影介绍 -->
+    <view class="movie-info">
+      <!-- 右侧  标题 -->
+      <view class="movie-title">{{item.title}}</view>
+      <!-- 右侧  评分 -->
+      <view class="movie-score">评分:{{item.rating.average}}</view>
+      <!-- 右侧  主演 -->
+      <view class="movie-show">领衔主演:{{item.casts[0].name}}  {{item.casts[1].name}}  {{item.casts[2].name}}</view>
+      <!-- 右侧  年份 -->
+      <view class="movie-show">年份:{{item.year}}</view>
+      <!-- 右侧  详情按钮 -->
+      <view class="movie-btn">
+        <button class="movie-one" bindtap="jumpComment" data-id="{{item.id}}">详情</button>
+        <button class="movie-one" bindtap="jumpComment" data-id="{{item.id}}">收藏</button>
+      </view>
+    </view>
+  </view>
+</scroll-view>

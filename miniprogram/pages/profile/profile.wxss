@@ -1,0 +1,53 @@
+/* pages/profile/profile.wxss */
+/* 将头像修改为圆形 */
+/* 1.父元素相对定位 */
+.profile{
+  background:#e54847;
+  height:300rpx;
+  text-align:center; /*子元素居中*/
+  position:relative;  /*相对定位*/
+  width:100%;
+}
+/* 2.子元素绝对定位 倒角50% */
+.profile-img{
+  position:absolute;
+  width:200rpx;height:200rpx;
+  display:block;
+  overflow:hidden;
+  border-radius:50%;
+  left:20%;
+  transform:translate(-50%,50rpx);
+}
+/* 信息 */
+.profile-name{
+  position: absolute;
+  left:40%; top:80rpx;
+}
+.profile-sex{
+  position: absolute;
+  left:40%; top:160rpx;
+}
+.settings {
+  background-color: #fff; 
+}
+.setting-item {
+  padding: 0 20rpx;
+  height: 100rpx;
+  border-bottom: 1px solid #eee;
+  font-size: 32rpx;
+  line-height:100rpx;
+  position:relative;
+}
+.settings .icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+.settings .item-icon {
+  margin-right: 20rpx;
+}
+.right_img{
+  position:absolute;
+  top:25rpx; right:15rpx;
+}
+
+

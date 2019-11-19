@@ -1,0 +1,22 @@
+<!--pages/mymovie/mymovie.wxml-->
+<!-- 1.喜欢的电影图片 -->
+<view class="movielist">
+  <image src="/images/01.jpg"></image>
+
+  <!-- 2.用户的输入区域 -->
+  <view class="user_view"></view>
+  <!-- 3.输入框 喜欢的原因 -->
+  <van-field
+    value="{{ content }}"
+    placeholder="喜欢的原因"
+    bind:change="onContentChange"
+  />
+  <!-- 4.按钮  保留经典画面 -->
+  <van-button type="primary" size="large" bindtap="selectImg">保留经典画面</van-button>
+  <!-- 5.预览经典画面 -->
+  <view>
+    <image src="{{images}}" style="width:200rpx;height:200rpx;"></image>
+  </view>
+  <!-- 6.按钮  提交 -->
+  <van-button type="danger" size="large" bindtap="submit">提交</van-button>
+</view>

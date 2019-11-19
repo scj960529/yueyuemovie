@@ -1,0 +1,22 @@
+<!--pages/profile/profile.wxml-->
+<!-- 个人中心 -->
+<view class="profile">
+  <view class="profile-img">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class="profile-name">
+    昵称:<open-data type="userNickName"></open-data>
+  </view>
+  <view class="profile-sex">
+    城市:<open-data type="userProvince"></open-data>
+  </view>
+</view>
+<view class="flex-wrp-row settings">
+  <view wx:for="{{others}}" wx:key="{{data-id}}" data-type="{{item.types}}" bindtap="othersClick" class="setting-item">
+    <image class="icon item-icon" src="{{item.icon}}" />
+    <text class="flex">{{item.tit}}</text>
+    <image class="icon right_img" src="../../images/next.png" />
+  </view>
+
+</view>
+<button open-type="getUserInfo" lang="zh_CH" bindgetuserinfo="handle3" type="primary">获取用户信息</button>

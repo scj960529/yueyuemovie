@@ -1,0 +1,49 @@
+
+/* 1.背景图片 */
+.detail-container{
+  height:400rpx;
+  opacity:.9; /*透明度*/
+  filter:blur(40rpx);/*模糊滤镜*/
+}
+/* 2.遮罩层 */
+.detail-mask{
+  width:100%;height:400rpx;
+  background:#333;
+  position:absolute;
+  left:0;top:0;
+  z-index:-1;
+}
+/* 3.电影详细信息 */
+.detail-info{
+  position:absolute;
+  top:0;left:0;
+  width:100%;height:400rpx;
+  display:flex;
+  padding:20rpx;
+}
+/* 4.图片大小 */
+.detail-img{
+  width:280rpx;
+  height:90%;
+  margin-right:24rpx;
+}
+/* 5.右侧区域  电影内容 */
+.detail{
+  line-height:60rpx;
+}
+.detail view{
+  color:#fff;
+  font-size:32rpx;
+}
+/* 6.分数 */
+.detail .detail-sc{
+  color:#fc0;
+  font-size:36rpx;
+}
+/* 电影描述 */
+.desc{
+  color:#555;
+  font-size:24rpx;
+  padding:20rpx;
+}
+

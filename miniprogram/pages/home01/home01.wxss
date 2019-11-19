@@ -1,0 +1,40 @@
+/* 轮播图 */
+.swiper_one{
+  width:100%;height:1000rpx;
+}
+.swiper_img{
+  width:100%;height:100%;
+}
+/* 推荐 */
+.board-item {
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 30rpx 0;
+  background-color: #fff;
+}
+.board-item .inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.board-item .inner .movie-item {
+  width: 30%;
+}
+.inner .movie-item image {
+  width: 250rpx;
+  height: 350rpx;
+}
+.movie-top{
+  position:relative;
+  border-bottom: 1rpx solid #ccc;
+}
+.pot{
+  width:40rpx;height:40rpx;
+  position:absolute;
+  top:0rpx; right:10rpx;
+}
+.inner .movie-item view {
+  font-size: 30rpx;
+  text-align: center;
+  padding-bottom:10rpx;
+}

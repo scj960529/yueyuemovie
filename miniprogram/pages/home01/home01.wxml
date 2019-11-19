@@ -1,0 +1,22 @@
+<scroll-view sroll-y="true">
+   <!-- 轮播图 -->
+  <swiper indicator-dots="true" indicator-color="rgba(0,0,0,.3)" indicator-active-color="#000" autoplay="true" interval="5000" duration="500" class="swiper_one">
+    <swiper-item wx:for="{{imgs}}" wx:key="id">
+      <image class="swiper_img" bindtap="jumpComment" data-id="{{item.id}}" src="{{item.images.small}}" mode="aspectFill"/>
+    </swiper-item>
+    
+  </swiper>
+
+  <view class="board-item">
+    <view class="movie-top">
+      <text>为您推荐正在热映</text>
+      <image src="../../images/pot.png" class="pot" />
+    </view>
+    <view class="inner">
+      <view class="movie-item" wx:for="{{imgsList}}" wx:key="id">
+        <image bindtap="jumpComment" data-id="{{item.id}}" src="{{ item.images.small }}" mode="aspectFill"/>
+        <view>{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

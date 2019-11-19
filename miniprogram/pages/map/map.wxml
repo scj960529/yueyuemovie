@@ -1,0 +1,14 @@
+<!--pages/map/map.wxml-->
+<!-- 商城地图 -->
+<map id="map" 
+longitude="{{longitude}}"
+latitude="{{latitude}}"
+scale="{{scale}}"
+style="width:100%;height:600rpx;"
+show-location="true"
+controls="{{controls}}"
+>
+</map>
+<button type="warn" bindtap="data_map">获取当前位置</button>
+
+

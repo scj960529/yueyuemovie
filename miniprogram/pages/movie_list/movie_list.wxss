@@ -1,0 +1,50 @@
+/* pages/home01/home01.wxss */
+/* 一部电影 */
+.movie{
+  display:flex;
+  padding:10rpx; 
+  border-bottom:1px solid #ccc;
+}
+/* 左侧的图片 */
+.movie-img{
+  flex:1;
+  width:300rpx;height:500rpx;
+  margin-right:20rpx; /*右侧文字间距*/
+}
+/* 右侧的电影介绍 */
+.movie-info{
+  flex:1;/*将右侧的区域充满*/
+  background: #f5f5f5;
+  font-size:28rpx;
+  line-height:1.8;/*原有间距的1.8倍*/
+  position: relative;
+}
+/* 右侧的标题 */
+.movie-title{
+  color:#666;
+  font-size:40rpx;
+}
+/* 右侧的分数 */
+.movie-score{
+  color:#faaf00;
+  font-size: 30rpx;
+}
+/* 主演、年份 */
+.movie-show{
+  font-size: 30rpx;
+}
+.movie-btn{
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0rpx;left:5rpx;
+}
+/* 右侧的按钮 */
+.movie-one{
+  width:150rpx;
+  height:60rpx;
+  background:#e54847;
+  color:#fff;
+  font-size:26rpx;
+  margin-right: 30rpx;
+}
